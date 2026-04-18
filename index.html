@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مركز الرؤية الطبي - النظارات الطبية وفحص النظر</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 3D Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">👁️ مركز الرؤية الطبي</div>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#products">النظارات</a></li>
+                <li><a href="#appointment">حجز موعد</a></li>
+                <li><a href="#services">خدماتنا</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+            <div class="cart-icon">
+                🛒 <span class="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">رؤية واضحة، حياة أفضل</h1>
+            <p class="hero-subtitle">أحدث النظارات الطبية وفحوصات النظر المتقدمة في الأردن</p>
+            <div class="hero-buttons">
+                <a href="#appointment" class="cta-button primary">احجز موعد فحص</a>
+                <a href="#products" class="cta-button secondary">تسوق النظارات</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <h2 class="section-title">خدماتنا المتميزة</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">👁️</div>
+                <h3>فحص النظر الشامل</h3>
+                <p>فحص دقيق للعين باستخدام أحدث الأجهزة الطبية</p>
+                <span class="service-price">١٥ دينار</span>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔍</div>
+                <h3>فحص قاع العين</h3>
+                <p>كشف مبكر لأمراض الشبكية والمياه الزرقاء</p>
+                <span class="service-price">٢٥ دينار</span>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📏</div>
+                <h3>قياس ضغط العين</h3>
+                <p>فحص ضغط العين للوقاية من الجلوكوما</p>
+                <span class="service-price">١٠ دنانير</span>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">👶</div>
+                <h3>فحص نظر الأطفال</h3>
+                <p>فحص متخصص لنظر الأطفال من عمر 3 سنوات</p>
+                <span class="service-price">٢٠ دينار</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <h2 class="section-title">النظارات الطبية</h2>
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="product-badge">جديد</div>
+                    <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=400" alt="نظارة طبية">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">نظارة كلاسيكية أنيقة</h3>
+                    <p class="product-description">إطار معدني فاخر مع عدسات مضادة للانعكاس</p>
+                    <div class="product-footer">
+                        <span class="product-price">٤٥ دينار</span>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="product-badge hot">الأكثر مبيعاً</div>
+                    <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400" alt="نظارة طبية">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">نظارة رياضية مرنة</h3>
+                    <p class="product-description">إطار مرن مقاوم للكسر، مثالي للرياضيين</p>
+                    <div class="product-footer">
+                        <span class="product-price">٣٥ دينار</span>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=400" alt="نظارة طبية">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">نظارة نسائية عصرية</h3>
+                    <p class="product-description">تصميم أنثوي راقي بألوان متنوعة</p>
+                    <div class="product-footer">
+                        <span class="product-price">٥٠ دينار</span>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1556306535-38febf6782e7?w=400" alt="نظارة طبية">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">نظارة رجالية كلاسيك</h3>
+                    <p class="product-description">إطار خشبي طبيعي بتصميم كلاسيكي</p>
+                    <div class="product-footer">
+                        <span class="product-price">٦٠ دينار</span>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="product-badge">محدود</div>
+                    <img src="https://images.unsplash.com/photo-1509695507497-903c140c43b0?w=400" alt="نظارة طبية">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">نظارة ذكية متطورة</h3>
+                    <p class="product-description">نظارة ذكية مع تقنية الحماية من الضوء الأزرق</p>
+                    <div class="product-footer">
+                        <span class="product-price">٨٥ دينار</span>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1551731409-43eb3e517a1a?w=400" alt="نظارة طبية">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">نظارة أطفال ملونة</h3>
+                    <p class="product-description">نظارة آمنة للأطفال بألوان زاهية ومرحة</p>
+                    <div class="product-footer">
+                        <span class="product-price">٣٠ دينار</span>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="appointment-section">
+        <h2 class="section-title">احجز موعد فحص النظر</h2>
+        <div class="appointment-container">
+            <div class="appointment-info">
+                <h3>لماذا تختار مركز الرؤية الطبي؟</h3>
+                <ul class="features-list">
+                    <li>✅ أطباء عيون متخصصون</li>
+                    <li>✅ أحدث الأجهزة الطبية</li>
+                    <li>✅ فحص شامل ودقيق</li>
+                    <li>✅ استشارة مجانية</li>
+                    <li>✅ ضمان على النظارات</li>
+                </ul>
+            </div>
+            <div class="appointment-form">
+                <form id="appointmentForm">
+                    <div class="form-group">
+                        <label for="name">الاسم الكامل</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">رقم الهاتف</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">نوع الفحص</label>
+                        <select id="service" name="service" required>
+                            <option value="">اختر نوع الفحص</option>
+                            <option value="comprehensive">فحص شامل (١٥ دينار)</option>
+                            <option value="retina">فحص قاع العين (٢٥ دينار)</option>
+                            <option value="pressure">قياس ضغط العين (١٠ دنانير)</option>
+                            <option value="children">فحص نظر الأطفال (٢٠ دينار)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">التاريخ المفضل</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">الوقت المفضل</label>
+                        <select id="time" name="time" required>
+                            <option value="">اختر الوقت</option>
+                            <option value="09:00">٩:٠٠ صباحاً</option>
+                            <option value="10:00">١٠:٠٠ صباحاً</option>
+                            <option value="11:00">١١:٠٠ صباحاً</option>
+                            <option value="12:00">١٢:٠٠ ظهراً</option>
+                            <option value="14:00">٢:٠٠ مساءً</option>
+                            <option value="15:00">٣:٠٠ مساءً</option>
+                            <option value="16:00">٤:٠٠ مساءً</option>
+                            <option value="17:00">٥:٠٠ مساءً</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">ملاحظات إضافية</label>
+                        <textarea id="notes" name="notes" rows="3" placeholder="أي معلومات إضافية تود إخبارنا بها..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">احجز الموعد الآن</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">تواصل معنا</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <span class="icon">📞</span>
+                <h4>اتصل بنا</h4>
+                <p>+962 78 090 9682</p>
+            </div>
+            <div class="contact-item">
+                <span class="icon">📧</span>
+                <h4>راسلنا</h4>
+                <p>zdidg05@gmail.com</p>
+            </div>
+            <div class="contact-item">
+                <span class="icon">📍</span>
+                <h4>زورنا</h4>
+                <p>عمّان، المملكة الأردنية الهاشمية</p>
+            </div>
+            <div class="contact-item">
+                <span class="icon">🕒</span>
+                <h4>ساعات العمل</h4>
+                <p>السبت - الخميس: ٩ص - ٧م<br>الجمعة: مغلق</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 مركز الرؤية الطبي. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
